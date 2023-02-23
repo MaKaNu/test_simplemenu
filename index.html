@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Test Simplemenu</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/zenburn.css">
+	</head>
+
+	<body>
+
+		<!-- SLIDES -->
+		<div class="reveal">
+			<div class="slides">
+				<style>
+					.td_left {
+						border:none !important;
+						text-align:left !important;
+						font-size:50% !important;
+						height:50% !important;
+					}
+					.td_right {
+						border:none !important;
+						text-align: right !important;
+						font-size:50% !important;
+						height:50% !important;
+					}
+				</style>
+				<!-- TEST -->
+				<section>
+					<h1>TEST 1</h1>
+					SOME TEXT
+					<section>
+						<h3>SUBSECTION</h3>
+						TEST
+					</section>
+					<section>
+						<h3>SUBSECTION</h3>
+						TEST 2
+					</section>
+				</section>
+
+				<section>
+					<h1>TEST 2</h1>
+					SOME TEXT
+					<section>
+						<h3>SUBSECTION</h3>
+						TEST
+					</section>
+					<section>
+						<h3>SUBSECTION</h3>
+						TEST 2
+					</section>
+				</section>
+			</div>
+		</div>
+
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/simplemenu/simplemenu.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Activate SlideNumbers
+	      		slideNumber: "c/t",
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ Simplemenu, RevealMath.KaTeX, RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	</body>
+</html>
